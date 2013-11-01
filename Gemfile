@@ -40,6 +40,7 @@ gem 'binding_of_caller'
 gem 'haml'
 gem 'pry'
 gem 'eventbrite-client'
+gem 'ri_cal'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
