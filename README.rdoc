@@ -1,4 +1,21 @@
-icalFeeder
-==========
+# icalFeeder
+=========
 
-Makes an ical feed of all the eventbrite things youre going to. 
+TL;DR see eventbrite in your calendar. 
+
+Makes an ical feed of all the eventbrite things you're going to. Get an token from eventbrite, give it to icalFeeder to pump out a valid iCalendar file that can be consumed by about any calendar client. I'd call this project 'eventbrite ticket feed', but eventbrite would be upset.
+
+## Installation
+
+Clone the repo, bundle install, rails s
+
+## Credits
+Most of the credit goes to the Eventbrite for creating the omniauth-eventbrite gem, and to Rick DeNatale for creating the ri_cal gem.  
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request  
