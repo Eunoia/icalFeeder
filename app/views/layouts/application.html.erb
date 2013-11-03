@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IcalFeeder</title>
+  <title>iCal Feeder</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="pure-g-r" id="layout">
+		<div class="sidebar pure-u">
+			<header class="header">
+				<hgroup>
+          <h1 class="brand-title">iCal Feeder</h1>
+          <h2 class="brand-tagline">calander feeds from eventbrite</h2>
+        </hgroup>
+        <nav class="nav">
+          <ul class="nav-list">
+              <li class="nav-item">
+                  <a class="pure-button" href="https://github.com/Eunoia/icalFeeder">Github</a>
+              </li>
+              <li class="nav-item">
+                  <a class="pure-button" href="http://icalfeeds.herokuapp.com/auth/eventbrite">Create Feed</a>
+              </li>
+          </ul>
+      </nav>
+      </header>
+    </div>
+        <div class="pure-u-1">
+        	<div class="content">
+	        	<section class="post">
+	                <header class="post-header">
+	                    <h2 class="post-title">iCal Feeder</h2>
+	                    <p class="post-meta">
+	                        By <a href="http://github.com/eunoia" class="post-author">Eunoia</a><!-- under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>-->
+	                    </p>
+	                </header>
 
-<%= yield %>
-
+	                <div class="post-description">
+	                    <p>
+	                        Eventbrite lacks support for generating a calendar feeds. This app will generate an iCal feed for the events you're going to. Use this app to generate eventbrite calendar feeds. Import your eventbrite events into iCal or Google Calendar. 
+	                    </p>
+	                </div>
+                </section>
+                <h1 class="content-subhead">Lets get started</h1>
+                <section class="post">
+	                <div class="post-description">
+	                    <p>
+	                        <%= yield %>
+	                    </p>
+	                </div>
+                </section>
+        	</div>
+    	</div>
+	</div>
 </body>
 </html>

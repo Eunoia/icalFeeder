@@ -1,0 +1,21 @@
+%section.post
+	%header.post-header
+		%h2.post-title
+			We got your feed!
+		%p.post-meta
+			By
+			%a.post-author{href:"#"}
+				You!
+	.post-description
+		%p
+			This is a link to your feed.
+			%br
+			Copy and paste it into your calender app. 
+			%br
+			%blockquote
+				%a{href: request.env["REQUEST_URI"] }
+					=request.env["REQUEST_URI"]
+			%br
+			&mdash;Love
+			%br
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eunoia
