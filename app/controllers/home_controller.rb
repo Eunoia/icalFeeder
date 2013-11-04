@@ -15,6 +15,10 @@ class HomeController < ApplicationController
 		@token = session['token']
 	end
 
+	def failure
+		render text: "Sad :("
+	end
+
 	def feed
 		#show webpage with info if your a browser, else render iCal
 		#look up user by params[:token]

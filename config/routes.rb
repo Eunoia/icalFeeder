@@ -4,7 +4,7 @@ IcalFeeder::Application.routes.draw do
 
   root 'home#hello'
   get '/auth/:provider/callback', to: 'home#store_token'
-
+  get '/auth/failure', to: 'home#failure'
   # get '/feed/create', to: 'home#create', as: 'create'
   get '/feed/:token', to: "home#feed", as: 'feed'
   # You can have the root of your site routed with "root"
